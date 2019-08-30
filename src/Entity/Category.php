@@ -50,6 +50,7 @@ class Category
      * param Article $article
      * @return Category
      */
+    /**Ajouter un article */
     public function addArticle(Article $article): self
     {
         if (!$this->articles->contains($article)) {
@@ -62,6 +63,7 @@ class Category
      * @param Article $article
      * @return Category
      */
+    /**Suppréssion d'un article */
     public function removeArticle(Article $article): self
     {
         if ($this->articles->contains($article)) {
